@@ -1,4 +1,4 @@
-# SharePoint
+# SharePoint 2016 Service Accounts
 Bu script ile sharePoint için gerekli olan Servis Hesaplarını AD'de oluşturabilirsiniz.
 
 Script gerekli olan kullanıcı adı ve parola bilgilerini aynı dizinde yer alan xml dosyasından alır.
