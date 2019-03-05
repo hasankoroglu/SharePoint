@@ -1,0 +1,51 @@
+﻿FirstName,LastName,SamAccountName,Title,Manager,Department
+Hasan,AY,hasan.ay,Genel Müdür,,Genel Müdürlük
+Ali,KÜÇÜK,ali.kucuk,Özel Kalem Müdürü,hasan.ay,Genel Müdürlük
+Mehmet,DEMİRKENT,mehmet.demirkent,Genel Müdür Yardımcısı,hasan.ay,Genel Müdürlük
+Murat,AKKUŞ,murat.akkus,Genel Müdür Yardımcısı,hasan.ay,Genel Müdürlük
+İbrahim,ÇINAR,ibrahim.cinar,Genel Müdür Yardımcısı,hasan.ay,Genel Müdürlük
+Mustafa,ALTINOK,mustafa.altinok,Genel Müdür Yardımcısı,hasan.ay,Genel Müdürlük
+Zeynep,AĞCA,zeynep.agca,Özel Kalem Personeli,ali.kucuk,Genel Müdürlük
+Sema,TAŞ,sema.tas,Özel Kalem Uzmanı,ali.kucuk,Genel Müdürlük
+Hatice,KIZILOĞLU,hatice.kiziloglu,Özel Kalem Sorumlusu,ali.kucuk,Genel Müdürlük
+İlker,KÜÇÜK,ilker.kucuk,Özel Kalem Müdür Yardımcısı,ali.kucuk,Genel Müdürlük
+Gülşah,ARICI,gulsah.arici,Müdür,mustafa.altinok,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Mesut,GAVGA,mesut.gavga,Sistem Uzmanı,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Erkan,ÖZTÜRK,erkan.ozturk,Yazılım Uzmanı,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Feray,GÜLER,feray.guler,Destek Uzmanı,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Münevver,ARSLAN,munevver.arslan,Müdür Yardımcısı,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Merve,SARI,merve.sari,Büro Personeli,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Eda,TÜRKAN,eda.turkan,Sistem Sorumlusu,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Nuray,BAĞCIOĞLU,nuray.bagcioglu,Yazılım Sorumlusu,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Nadir,ÖZCAN,nadir.ozcan,Destek Sorumlusu,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Etkin,ÖZGEN,etkin.ozgen,Müdür Yardımcısı,gulsah.arici,Bilgi ve İletişim Teknolojileri Müdürlüğü
+Oğulcan,ÖZARSLAN,ogulcan.ozarslan,Müdür,ibrahim.cinar,İnsan Kaynakları Müdürlüğü
+Mehmet,TATLI,mehmet.tatli,Personel Temin Uzmanı,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Çiğdem,YOLERİ,cigdem.yoleri,Personel Temin Sorumlusu,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Ali,SALMANLI,ali.salmanli,Puantaj ve Ücretleme Uzmanı,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Didem,EKŞİOĞLU,didem.eksioglu,Puantaj ve Ücretleme Sorumlusu,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Ozan,YILMAZ,ozan.yilmaz,Eğitim ve Sosyal İşler Uzmanı,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Meriç,TANYELİ,meric.tanyeli,Eğitim ve Sosyal İşler Sorumlusu,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Selin,BAYTUR,selin.baytur,Müdür Yardımcısı,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Firdevs,ERİM,firdevs.erim,Müdür Yardımcısı,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Serap,ÇEVİK,serap.cevik,Büro Personeli,ogulcan.ozarslan,İnsan Kaynakları Müdürlüğü
+Serkan,SAPOĞLU,serkan.sapoglu,Müdür,murat.akkus,Muhasebe Müdürlüğü
+Besra,ÖZER,besra.ozer,Büro Personeli,serkan.sapoglu,Muhasebe Müdürlüğü
+Murat,GÜREL,murat.gurel,Bütçe Uzmanı,serkan.sapoglu,Muhasebe Müdürlüğü
+Betül,BAŞBUĞ,betul.basbug,Bütçe Sorumlusu,serkan.sapoglu,Muhasebe Müdürlüğü
+Sercan,ERGÖRMÜŞ,sercan.ergormus,Şubeler Uzmanı,serkan.sapoglu,Muhasebe Müdürlüğü
+Çağla,PAK,cagla.pak,Şubeler Sorumlusu,serkan.sapoglu,Muhasebe Müdürlüğü
+Semih,ZEREN,semih.zeren,Finans Uzmanı,serkan.sapoglu,Muhasebe Müdürlüğü
+Nursaç,TANRIVER,nursac.tanriver,Finans Sorumlusu,serkan.sapoglu,Muhasebe Müdürlüğü
+Kerim,KENAR,kerim.kenar,Müdür Yardımcısı,serkan.sapoglu,Muhasebe Müdürlüğü
+İlker,ÇELİK,ilker.celik,Müdür Yardımcısı,serkan.sapoglu,Muhasebe Müdürlüğü
+Oğuz,ÖZDEMİR,oguz.ozdemir,Müdür,mehmet.demirkent,Destek Hizmetleri Müdürlüğü
+Burak,YÜCEL,burak.yucel,Büro Personeli,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Tahir,OĞHAN,tahir.oghan,Aşçı,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Hatice,KARAMAN,hatice.karaman,Mekanik Uzmanı,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Gözde,UZER,gozde.uzer,Elektrik Teknisyeni,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Tenzile,ORHON,tenzile.orhon,Tesisatçı,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Hülya,SARIÇAM,hulya.saricam,Makine Mühendisi,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Hatice,ŞENTUNA,hatice.sentuna,Elektrik Mühendisi,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Didem,ŞİMŞEK,didem.simsek,Müdür Yardımcısı,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
+Sinan,YILDIZ,sinan.yildiz,Bilgisayar İşletmeni,oguz.ozdemir,Destek Hizmetleri Müdürlüğü
