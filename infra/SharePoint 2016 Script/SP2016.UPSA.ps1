@@ -3,8 +3,8 @@ Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue
 #Configuration Parameters
 $ServiceAppName = "User Profile Service Application"
 $ServiceAppProxyName = "User Profile Service Application Proxy"
-$AppPoolUserName = "domain\SP_UserProfiles"
-$AppPoolPassword = ""
+$AppPoolUserName = "domain\SP_UPAppPool"
+$AppPoolPassword = ConvertTo-SecureString 'Parola123!!!' -AsPlainText -Force
 $AppPoolName = "User Profile Service Application App Pool"
 $UserProfileDB = "SP_UPSA_DB"
 $UserProfileSyncDB = "SP_UPSA_Sync_DB"
@@ -16,13 +16,15 @@ Try {
     
     #Check if Managed account is registered already
     Write-Host -ForegroundColor Yellow "Checking if the Managed Accounts already exists"
-    $AppPoolAccount = Get-SPManagedAccount -Identity $AppPoolAccount -ErrorAction SilentlyContinue
+    $AppPoolAccount = Get-SPManagedAccount -Identity $AppPoolUserName -ErrorAction SilentlyContinue
     if($AppPoolAccount -eq $null)
     {
         Write-Host -ForegroundColor Green "Creating Application Pool Account..."
         $AppPoolAccount = New-Object system.management.automation.pscredential $AppPoolUserName, $AppPoolPassword
         New-SPManagedAccount $AppPoolAccount
     }
+
+    $AppPoolAccount = Get-SPManagedAccount -Identity $AppPoolUserName -EA 0
     
     #Check if the application pool exists already
     Write-Host -ForegroundColor Yellow "Checking if the Application Pool already exists"
@@ -30,7 +32,7 @@ Try {
     if ($AppPool -eq $null)
     {
         Write-Host -ForegroundColor Green "Creating Application Pool..."
-        $AppPool = New-SPServiceApplicationPool -Name $AppPoolName -Account $AppPoolAccount
+        $AppPool = New-SPServiceApplicationPool -Name $AppPoolName -Account $AppPoolAccount -ErrorAction Continue > $null
     }
     
     #Check if the Service application exists already
