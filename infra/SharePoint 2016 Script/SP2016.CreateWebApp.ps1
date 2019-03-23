@@ -17,11 +17,11 @@ $SiteCollAdmin = "domain\user"
 
 
 #SUPER USER ACCOUNT - Use your own Account (NB: NOT A SHAREPOINT ADMIN)
-$sOrigUser= "hk\SP_SuperUser"
+$sOrigUser= "domain\SP_SuperUser"
 $sUserName = "SP_SuperUser"
 
 #SUPER READER ACCOUNT - Use your own Account (NB: NOT A SHAREPOINT ADMIN)
-$sOrigRead = "hk\SP_SuperReader"
+$sOrigRead = "domain\SP_SuperReader"
 $sReadName = "SP_SuperReader"
 
 #Get App Pool account
