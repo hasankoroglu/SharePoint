@@ -2,8 +2,8 @@
 Add-PsSnapin "Microsoft.SharePoint.PowerShell" -EA 0
  
 #Variables
-$AppPoolAccount = "hk\SP_PortalAppPool" #The Application Pool domain account, must already be created as a SharePoint managed account
-$AppPoolPassword = ConvertTo-SecureString '211276Hsn' -AsPlainText -Force
+$AppPoolUserName = "hk\SP_PortalAppPool" #The Application Pool domain account, must already be created as a SharePoint managed account
+$AppPoolPassword = ConvertTo-SecureString 'Parola!!!123' -AsPlainText -Force
 $ApplicationPoolName = "SharePoint 80 AppPool" #This will create a new Application Pool
 $ContentDatabase = "SP_ContentDB" #Content DB
 $DatabaseServer = "spsql01" #Alias of your DB Server
@@ -28,7 +28,7 @@ $sReadName = "SP_SuperReader"
 $AppPoolAccount = Get-SPManagedAccount -Identity $AppPoolUserName -ErrorAction Continue
 if($null -eq $AppPoolAccount)
 {
-   $AppPoolAccount = New-Object system.management.automation.pscredential $AppPoolAccount, $AppPoolPassword
+   $AppPoolAccount = New-Object system.management.automation.pscredential $AppPoolUserName, $AppPoolPassword
    New-SPManagedAccount $AppPoolAccount
 }
 
