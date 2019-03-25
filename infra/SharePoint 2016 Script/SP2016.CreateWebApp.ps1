@@ -2,11 +2,11 @@
 Add-PsSnapin "Microsoft.SharePoint.PowerShell" -EA 0
  
 #Variables
-$AppPoolUserName = "hk\SP_PortalAppPool" #The Application Pool domain account, must already be created as a SharePoint managed account
+$AppPoolUserName = "domain\SP_PortalAppPool" #The Application Pool domain account, must already be created as a SharePoint managed account
 $AppPoolPassword = ConvertTo-SecureString 'Parola!!!123' -AsPlainText -Force
 $ApplicationPoolName = "SharePoint 80 AppPool" #This will create a new Application Pool
 $ContentDatabase = "SP_ContentDB" #Content DB
-$DatabaseServer = "spsql01" #Alias of your DB Server
+$DatabaseServer = "spsql" #Alias of your DB Server
 $WebApp = "http://sp" #The name of your new Web Application
 $HostHeader = "sp" #The IIS host header
 $Url = $WebApp
