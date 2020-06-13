@@ -59,6 +59,7 @@ foreach ($user in $users) {
                 -EmailAddress ($user.SamAccountName + $dnsroot) -UserPrincipalName ($user.SamAccountName + $dnsroot) `
                 -Title $user.title -Department $user.Department -Enabled $true -ChangePasswordAtLogon $false -PasswordNeverExpires  $true `
                 -AccountPassword $defpassword -PassThru `
+                -OfficePhone $user.PhoneNumber `
                 -Path $userspath
                 $userPhoto = ".\vesikalik\" + $user.SamAccountName + ".jpg"
                 Set-ADUser -Identity $user.SamAccountName -Replace @{thumbnailPhoto=([byte[]](Get-Content $userPhoto -Encoding byte))}
@@ -78,6 +79,7 @@ foreach ($user in $users) {
                 -Department $user.Department `
                 -Path $userspath `
                 -Enabled $true -ChangePasswordAtLogon $false -PasswordNeverExpires  $true `
+                -OfficePhone $user.PhoneNumber `
                 -AccountPassword $defpassword -PassThru
                 $userPhoto = ".\vesikalik\" + $user.SamAccountName + ".jpg"
                 Set-ADUser -Identity $user.SamAccountName -Replace @{thumbnailPhoto=([byte[]](Get-Content $userPhoto -Encoding byte))}
