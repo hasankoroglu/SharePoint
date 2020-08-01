@@ -106,7 +106,19 @@ try
         Write-Host " - Setting Content Access Account"
         $c = New-Object Microsoft.Office.Server.Search.Administration.Content($ServiceApplication)
         $c.SetDefaultGatheringAccount($spContentAccessAcc, (ConvertTo-SecureString $spContentAccessPwd -AsPlainText -force))
-           
+
+        $svc = Get-SPServiceInstance | Where {$_.TypeName -eq "Search Host Controller Service"}
+
+        $ProcessIdentity = $svc.Service.ProcessIdentity
+            
+        $ProcessIdentity.Username = $spAppPoolAcc
+        $ProcessIdentity.Update()
+
+        $svc = (Get-SPEnterpriseSearchService).get_ProcessIdentity()
+        $svc.ManagedAccount = $spManagedAccount
+        $svc.Update()
+
+
   Write-Host " - Done creating '$ServiceApplicationName'.`n"
  }
  else 
