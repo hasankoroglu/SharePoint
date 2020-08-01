@@ -125,4 +125,15 @@ Get-SPServiceInstance | where-object {$_.TypeName -eq $AppManagementName} | Star
 Set-SPAppDomain $AppDomain
 Set-SPAppSiteSubscriptionName -Name "apps" -Confirm:$false 
 
+###################################################
+
+$farm = Get-SPFarm
+$cacheService = $farm.Services | Where {$_.Name -eq "AppFabricCachingService"}
+$cacheService.ProcessIdentity.CurrentIdentityType = “SpecificUser”
+$cacheService.ProcessIdentity.ManagedAccount = $AppPoolAccount
+$cacheService.ProcessIdentity.Update()
+$cacheService.ProcessIdentity.Deploy()
+
+###################################################
+
 write-host "DONE" 
