@@ -10,6 +10,7 @@ $SiteCollAdmin = "domain\user"
 $OwnerEmail = "user@domain"
 $ContentDatabaseName = "SP_$SiteName`_ContentDB"
 $ContentDatabase = New-SPContentDatabase -Name $ContentDatabaseName -WebApplication $WebApp
+Set-SPContentDatabase -Identity $ContentDataBaseName -MaxSiteCount 1 -WarningSiteCount 0
 #Create Site Collection
 New-SPSite -Url $SiteUrl `
            -OwnerAlias "i:0#.w|$SiteCollAdmin" `
