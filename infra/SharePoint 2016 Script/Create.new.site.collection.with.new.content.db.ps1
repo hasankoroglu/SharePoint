@@ -5,10 +5,10 @@ $WebApp = "http://sp"
 $SiteName = "PortalAdi"
 $SiteDescription = "Portal Açıklama"
 $SiteUrl = "$WebApp`/sites/$SiteName"
-$SiteCollectionTemplate = "STS#0" #Classic Teams Site
+$SiteCollectionTemplate = "STS#3" #Classic Teams Site
 $SiteCollAdmin = "domain\user"
 $OwnerEmail = "user@domain"
-$ContentDatabaseName = "SP_$SiteName`_ContentDB"
+$ContentDatabaseName = "SP_ContentDB_$SiteName"
 $ContentDatabase = New-SPContentDatabase -Name $ContentDatabaseName -WebApplication $WebApp
 Set-SPContentDatabase -Identity $ContentDataBaseName -MaxSiteCount 1 -WarningSiteCount 0
 #Create Site Collection
